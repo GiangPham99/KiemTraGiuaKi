@@ -7,15 +7,17 @@
     <title>login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
-<body>
-    <h1 class="p-3 bg-light">Hệ thống quản lý Danh bạ</h1>
-    <form action="" method="post" style="width: 400px; margin: auto; margin-top: 200px">
+<body style="background-color:pink;"> 
+<div>
+    
+    <form action="" method="post" style="width: 400px; margin: auto; margin-top: 200px ;">
+    <h1 class="p-1 bg-light"  style="color:red;text-align: center;" >Login</h1>
         <input name="username" type="text" class="form-control mb-2" placeholder="Username">
         <input name="password" type="password" class="form-control mb-2" placeholder="Password">
         <button type="submit" class="btn btn-primary mb-2">Đăng nhập</button>
         <p class="text-center text-primary" role="button" onclick="handleClickHome()">Quay lại trang chủ</p>
     </form>
-
+    </div>
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             include('./db_connection.php');
